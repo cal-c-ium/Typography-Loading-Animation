@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: var(--dark_colour);
+}
+
+:root {
+  --light_colour: #fafafa;
+  --dark_colour: #0a0a0a;
+
+
+  --font_1: Courier;
+  --font_2: Times;
+  --font_3: Verdana;
+}
+
+.looping-words {
+  height: 2.7em;
+  padding-left: .1em;
+  padding-right: .1em;
+  font-family: Arial, sans-serif;
+  font-size: 15vw;
+  font-weight: 700;
+  line-height: 100vh;
+  position: relative;
+
+  /*my additions*/
+  justify-self: center;
+  align-self: center;
+  place-self: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.looping-words__list {
+  text-align: center;
+  /*text-transform: uppercase;*/
+  white-space: nowrap;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+
+.looping-words__containers {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.looping-words__p {
+  margin: 0;
+  color: var(--light_colour);
+  user-select: none;
+}
+
+/*Individual Fonts for the words*/
+
+#load-word__1 {
+  font-family: var(--font_1);
+}
+
+#load-word__2 {
+  font-family: var(--font_2);
+}
+
+#load-word__3 {
+  font-family: var(--font_3);
+}
+
+/*For showing if text has been split*/
+.word, .lines, .chars {
+  outline: 10px dashed red;
+  border-radius: 10px;
+}
